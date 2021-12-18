@@ -1,0 +1,180 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: book stock query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: book_stock_query
+  - action: utter_book_stock_query
+
+
+- story: want to buy book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: want_to_buy_book
+  - action: utter_want_to_buy_book
+
+
+- story: want pdf book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: want_pdf_book
+  - action: utter_want_pdf_book
+
+
+- story: want pdf book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: website_book_set_not_show
+  - action: utter_website_book_set_not_show
+
+- story: what type of book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: what_type_of_book
+  - action: utter_what_type_of_book
+
+
+- story: do you have tranlate book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: do_you_have_tranlate_book
+  - action: utter_do_you_have_tranlate_book
+
+
+- story: dhaka university addmission book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: dhaka_university_addmission_book
+  - action: utter_dhaka_university_addmission_book
+
+- story: south india book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: west_india_book
+  - action: utter_west_india_book
+
+- story: want order several book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: want_order_several_book
+  - action: utter_want_order_several_book
+
+- story: out of stock get when
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: out_of_stock_get_when
+  - action: utter_out_of_stock_get_when
+
+
+- story: pre order a book
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: pre_order_a_book
+  - action: utter_pre_order_a_book
+
+
+- story: change address in order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: change_address_in_order
+  - action: utter_change_address_in_order
+
+
+- story: add new book on existing order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: add_new_book_on_existing_order
+  - action: utter_add_new_book_on_existing_order
+
+
+- story: general question one
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_question_one
+  - action: utter_general_question_one
+
+
+
+- story: general question two
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_question_two
+  - action: utter_general_question_two
+
+
+- story: general question three
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_question_three
+  - action: utter_general_question_three
+
+
+- story: general question three
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_question_four
+  - action: utter_general_question_four
+
+
+- story: general question five
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_question_five
+  - action: utter_general_question_five
+
+
+- story: general question six
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: general_question_six
+  - action: utter_general_question_six
+
+
+- story: promo code related question one
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: promo_code_related_question_one
+  - action: utter_promo_code_related_question_one
+
+
+- story: promo code related question two
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: promo_code_related_question_two
+  - action: utter_promo_code_related_question_two
+
+- story : payment related questions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: payment_related_questions
+  - action: utter_payment_related_questions

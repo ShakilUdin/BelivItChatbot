@@ -1,0 +1,397 @@
+version: "3.0"
+
+nlu:
+-  intent: greet
+   examples: |
+     - [hey](category)
+     - [hello](category)
+     - hi
+     - [hello there](category)
+     - good morning
+     - good evening
+     - moin
+     - hey there
+     - let's go
+     - hey dude
+     - goodmorning
+     - goodevening
+     - good afternoon
+     - হায়
+     - হ্যালো
+     - [আসসা্লামু আইলাইকুম](category)
+     - [Assalamu alaykum](category)
+     - [কেউ আছেন?](category)
+     - [keu asen](category)
+     - [keu achen](category)
+     - [একটি বিষয় জানতে চাছি](category)
+     - [ekti bishoy jante chacchi](category)
+     - [আমি একটু কথা বলতে চাচ্ছি](category)
+     - [ami ektu kotha bolte cacchi](category)
+     - want to talk
+     - [Assalamu Alaikum]. Is there anyone to [help me?](category)
+     - hello are you there
+     - Hey i want your help.
+
+-  intent: book_stock_query
+   examples: |
+     - [boiti] ki stock e ase?(category)
+     - [boiti ki stock] e ache?(category)
+     - কোন [বইগুলো] আপনাদের [স্টকে আছে এখন](category)
+
+-  intent: want_to_buy_book
+   examples: |
+     - এই বইটি কি নিতে
+     - [ekti] [boi nite chai](category)
+     - [বই চাই](category)
+     - [boi chai](category)
+     - একটি [বই লাগবে](category
+     - ekti [boi] [lagbe](category)
+     - [বইটি লাগবে](category)
+     - [boi lagbe](category)
+     - বই [অর্ডার করতে চাই](category)
+     - [boi order] [korte chai](category)
+
+-  intent: want_pdf_book
+   examples: |
+     - [পিডিএফ] লাগবে(category)
+     - [PDF] [lagbe](category)
+     - [বই] [ডাউনলোড] করবো [কিভাবে?](category)
+     - []Boi [download] [korbo] [kivabe?](category)
+
+-  intent: website_book_set_not_show
+   examples: |
+     - আপনাদের সাইটে [বইয়ের স্টক] শো করছে না, কিভাবে বুঝবো বইটি স্টকে আছে কি না?(category)
+     - Aponader site e boi er [stock show korse na] , [kivabe bujhbo] [boiti stock] e ase kina?(category)
+
+
+-  intent: what_type_of_book
+   examples: |
+     - কি কি [ধরনের বই পাওয়া যাবে?](category)
+     - Ki ki [dhoroner boi paoa jabe?](category)
+
+-  intent: do_you_have_tranlate_book
+   examples: |
+     - অনুবাদ বই কি পাওয়া যাবে?
+     - onubad boi ki paoa jabe?
+
+-  intent: dhaka_university_addmission_book
+   examples: |
+     - ঢাবি অধিভুক্ত ভর্তি বই পাওয়া যাবে?
+
+-  intent: west_india_book
+   examples: |
+     - পশ্চিমবঙ্গের বই আছে?
+     - Indian book ache?
+
+-  intent: want_order_several_book
+   examples: |
+     - আমি কিছু বই অর্ডার করতে চাই তাই জানতে পারি কি বইগুলো স্টকে আছে কি না
+     - ami kisu boi order korte chai tai jante pari ki boigulo stock ase kina
+
+-  intent: out_of_stock_get_when
+   examples: |
+     - আপনাদের সাইটের আউট অফ স্টক বইগুলো প্রি-অর্ডার করলে কবে পেতে পারি?
+     - apoader site er out of stock boigulo order korle kobe pete pari
+
+-  intent: pre_order_a_book
+   examples: |
+     - একটি বই প্রি-অর্ডার করেছি কবে পাবো?
+
+-  intent: change_address_in_order
+   examples: |
+     - অর্ডার এ দেয়া ঠিকানা কি পরিবর্তন করা যাবে?
+     - order er address change kora jabe ?
+     - Order e deya thikana ki poriborton kora jabe
+     - আমি কি আমার অর্ডারের ঠিকানা পরিবর্তন করতে পারবো?
+     - Ami ki amar order er thikana poriborton korte parbo?
+     - অর্ডারের ঠিকানাটি পরিবর্তন করতে চাচ্ছি
+     - order er thikana poriborton korte cacchi
+     - আমার অর্ডারের ঠিকানা পরিবর্তন করে চাই
+     - amar order er thikana poriborton korte chai
+     - আমার অর্ডারটি অফিসে নিতে চাছি
+     - amar order ti office e nite cacchi
+     - ঠিকানা পরিবর্তন করা যাবে
+     - ঠিকানাটি ভুল হয়েছে পরিবর্তন করতে চাই
+     - thikana ti bhul hoyese chage korte chai
+     - I want to change my order address
+     - kivabe address change korbo
+     - কিভাবে অর্ডার ঠিকানা পরিবর্তন করবো
+     - ঠিকানা পরিবর্তনের নিয়ম
+     - address change er niyom
+     - এই ঠিকানায় আমি এখন নেই
+     - ঠিকানা পরিবর্তন করবো
+     - ঠিকানা বদলানো যাবে
+     - ঠিকানা চেঞ্জ করবো
+
+-  intent: add_new_book_on_existing_order
+   examples: |
+     - আমার অর্ডারে নতুন কোনো বই সংযুক্ত করা যাবে
+     - amar order notun boi add korte chacchi
+     - আমি আরো কিছু বই নিতে চাচ্ছি
+     - আরো একটি বই নিতে চাচ্ছি
+     - নতুন কোণো বই যোগ করা যাবে
+     - একই বই আরো এক কপি লাগবে
+     - আরো একটি কপি লাগবে
+     - আমারে একটি বই বাতিল করতে চাচ্ছি
+     - একটি বই বাদ দিতে চাই
+     - একটি বই বাদ দিতে হবে
+     - কিছু বই বাদ দিতে হবে
+     - নতুন বই যোগ করতে হবে
+     - notun boi add korte hobe
+     - আরো বই যোগ করতে পারবো
+     - এই অর্ডারটির সাথে আরো কিছু বই যোগ করতে পারবো
+     - অর্ডারে আরো কিছু বই যোগ করতে চাচ্ছি কিভাবে করবো
+     - দুটি অর্ডার মার্জ করবো কিভাবে
+     - দুইটি অর্ডার একসাথে করবো কিভাবে
+     - আমার আগের অর্ডার এর সাথে নতুন একটি বই যোগ করতে চাই
+     - amar ager order er sathe notun ekti boi add korte chai
+     - আমার একটি অর্ডার আছে তার সাথে নতুন কোনো বই যোগ করা যাবে?
+     - আমি কি আরো কোনো বই অ্যাড করতে পারুম
+     - এই বইটার সাথে এই বই টা পাঠিয়ে দিন
+     - ও ভাই এইটাও লগে পাঠান
+     - ভাইয়া সাথে কি এই বইটাও দেওয়া যাবে
+     - এই বইটার সাথে এই বইটাও নিবো
+     - বই যোগ করবো
+     - বইয়ের সংখ্যা পরিবর্তন করতে চাই
+     - এই বইটার সাথে এই বইটাও নিলে যদি ডেলিভারি চার্জ ফ্রী হয় পাঠিয়ে দিন
+
+-  intent: book_delivery_question
+   examples: |
+     - [ডেলিভারি] [চার্জ] কত?(category)
+     - [সার্ভিস চার্জ] কত(category)
+     - [কুরিয়ার চার্জ] কত(category)
+     - [ডেলিভারি চার্জ] কত নেন ভাই(category)
+     - সার্ভিস চার্জ [কত নেন ভাই](category)
+     - কুরিয়ার চার্জ কত নেন
+     - [ঢাকার বাহিরে] পাঠাতে [কত খরচ](category)
+     - [ঢাকার ভিতরে] পাঠাতে কত খরচ(category)
+     - [Delivery charge] koto [dhakar bahire](category)
+     - রেডক্স হোম ডেলিভারিতে কত টাকা?
+     - বই নিলে ঢাকার বাহিরে বই সহ ডেলিভারি চার্জ কত
+     - Delivery charge  system?
+     - Delivery charge outside of Dhaka?
+     - INSIDE DHAKA DELIVERY CHARGE KOTO?
+     - Dhakay delivery crg koto
+     - [ডেলিভারি চার্জ আছে নাকি](category)
+     - [রেডেক্স এ খরচ কত](category)
+     - হোম ডেলিভারি কি ফ্রি?
+     - ঢাকা সিটিতে ডেলিভারি চার্জ কত
+     - কুরিয়ার কত পড়বে
+     - Delivery crg free
+     - কত দিতে হবে ডেলিভারি চার্জ
+     - সার্ভিস চার্জ কত দিতে হবে
+     - চার্জ কত টাকা
+     - ডেলিভারি করার জন্য কত নেন
+     - ডেলিভারি চার্জ কত করে
+     - কত টাকা অর্ডারে ডেলিভারি চার্জ ফ্রী
+     - কত টাকা অর্ডার করলে ডেলিভারি চার্জ ফ্রী
+     - [হোম ডেলিভারির ক্ষেত্রে চার্জ কত](category)
+     - [ঢাকার বাহিরে হোম ডেলিভারি চার্জ কত](category)
+     - হোম ডেলিভারির জন্য কত রাখেন আপনারা
+     - [আচ্ছা আমি এর সাথে] যদি আরো [বই কিনি চার্জ] তো এটাই নেবেন তাই না(category)
+     - [সদরে হোম ডেলিভারি] দিতে কত নেন(category)
+     - ডেরিবারি চার্জ আছে কি?
+     - ঢাকার বাহির থেকে বই পেতে হলে কত খরচ লাগবে
+     - [বই নিতে কত খরচ পরবে](category)
+     - onek golo boi order korle delivery charge eksathe kotho?
+     - চার্জ কতো আসবে?
+     - [Delivery fee koto](category)
+     - pathanor jonno khroch koto
+     - পাঠানোর জন্য খরচ কত
+     - কত খরচ লাগবে পাঠাতে
+     - কত খরচ দিতে হবে বই নিলে
+     - Delivery cost koto
+     - হোম ডেলিভারি দেন আর কত টাকা সেটা বলেন
+
+-  intent: general_question_one
+   examples: |
+     - আপনাদের দোকানে এসে বই নিতে চাই
+     - আপনাদের অফিসে এসে বই কিনতে চাই
+     - আপনাদের  ওখান থেকে সরাসরি বই নেওয়া যাবে
+     - আপনাদের দোকান কোথায়
+     - আপনাদের দোকান থেকে বই নিতে চাই
+     - আপনাদের কাছে এসে বই নিতে চাই
+     - সরাসরি এসে বই নেওয়া যাবে কি?
+     - দোকানে এসে বই নিতে চাছি
+     - সরাসরি এসে বই নিতে চাছি
+     - সরাসরি এসে বই নিতে চাই
+     - সরাসরি এসে কিভাবে বই নিবো
+     - aponader office e eshe boi nite chai
+     - apoander okhan theke shorashori boi neyao jabe kki
+     - aponader dokan kothay
+     - aponader shop ta kothay
+     - aponader shop e eshe boi nite chai
+     - shorashori eshe boi neya jabe ki
+     - dokane eshe boi nite chai
+     - shorashori eshe dekhe boi gulo nite chai
+     - shorashori eshe kivabe boi nibo
+     - shop e eshe boi nibo
+     - shorashori boi nite chaile ki korte hobe
+     - shorashori boi neyar upay ase ki>
+     - shop e dhukhe boi dekhte chai
+     - ami aponader stall e eshe boi nite parbo ki?
+
+-  intent: general_question_two
+   examples: |
+     - দেশের বাহিরে ডেলিভারি করেন?
+     - কলকাতা থেকে বই কিভাবে নিতে পারি
+     - কলকাতা থেকে বই কিভাবে পেতে পারি
+     - দেশের বাহিরে থাকি কিভাবে পাব বই
+     - আপনারা দেশের বাহিরে বই ডেলিভারি করেন
+     - ভারত থেকে বই নিবো কিভাবে
+     - ভারত এ বই ডেলিভারি করেন কি?
+     - পশ্চিমবঙ্গে কিভাবে বই পাঠান আপনারা
+     - পশ্চিমবঙ্গে থেকে বলছি, আপনারা কি এখানে বই পাঠাতে পারেন
+     - ইন্ডিয়া তে বই দেন ?
+     - উত্তরবঙ্গে কিভাবে বই নিবো
+     - আপনাদের বই কোলকাতা তে কীভাবে পেতে পারি ?
+     - ভারত থেকে কি আপনাদের বই অর্ডার করা যাবে?
+     - ভারতে কিভাবে বইগুলো পাব?
+     - desher bahire delivery koren?
+     - kolkata theke boi kivabe nite pari?
+     - kolkata theke boi kivabe pete pari?
+     - desher bahire thaki kivabe boi pabo
+     - aponara desher bahire boi delivery koren?
+     - india theke boi kivabe nibo
+     - india theke kivabe boi nibo
+     - poshchimbongo kivabe boi pathan aponara
+     - india te boi den?
+     - uttor bongo e kivabe boi nibo
+     - apoander boi kolkata te kivabe pete pari?
+     - india theke aponader boi order kora jabe
+     - india te kivabe boigulo pabo
+
+-  intent: general_question_three
+   examples: |
+     - আপনাদের হটলাইন নাম্বারটি ব্যস্ত
+     - আপনারা কল রিসিভ করেন না
+     - আপনাদের কল করে পাওয়া যায় না
+     - কল করে পাওয়া যায় না
+     - আপনাদের নাম্বারটি ব্যস্ত
+     - অনেকক্ষন ধরে লাইনে আছি কিন্তু লাইন পাচ্ছি না
+     - কল রিসিভ করার মত কেউ নাই?
+
+-  intent: general_question_four
+   examples: |
+     - আমাকে ভুল পাঠানো হয়েছে
+     - আমাকে ড্যামেজ বই পাঠানো হয়েছে
+     - আমাকে ছেড়া বই পাঠানো হয়েছে
+     - আপনারা কম বই পাঠাইছেন
+     - আপনারা ছেড়া বই পাঠাইছেন
+     - আপনারা কি বই দিছেন , বই ছেড়া
+     - পুরান বই কেনো পাঠিয়েছেন
+     - পুরান বই কেনো দিছেন
+     - বই কেনো কম দিছেন
+     - ছেড়া বই কেনো পাঠাইছেন
+     - amake kom pathano hoise boi
+     - amake damage boi pathano hoise
+     - amk damage boi pathano hoise
+     - amake kom boi pathaisen keno
+     - amk kom boi pathaisen kn
+     - aponara ki boi disen, boi chera
+     - boi kom disen aponara
+
+-  intent: general_question_five
+   examples: |
+     - ড্যামেজ বা ছেড়া ফাটা বই এর ক্ষেত্রে করনীয় কি?
+
+-  intent: general_question_six
+   examples: |
+     - ড্যামেজ বই পাঠালে কি করব
+     - ছেড়া ফাটা বই পাঠালে কি করব
+     - damage boi pathale ki korbo
+
+-  intent: promo_code_related_question_one
+   examples: |
+     - প্রোমোকোড
+     - প্রোমোকোড আছে কোনো?
+     - আমার প্রোমোকোড লাগবে
+     - প্রোম মোড আছে কোনো?
+     - আমার প্রোমো কোড লাগবে
+     - প্রোমো কোড এর জন্য কি করতে হবে
+     -  প্রোমোকোড এর জন্য কি করতে হবে
+     - এখন কোনো প্রোমো কোড এর অফার আছে
+     - নতুন কাস্টমার এর জন্য কোনো প্রোমো কোড আছে
+     - প্রোমো কোড কিভাবে পাবো?
+     - প্রোমোকোড দেওয়া যাবে
+     - নতুন দের জন্য কোনো প্রোমোকোড ?
+     -  প্রোমোকোড অফার আছে?
+     - আমি একজন নতুন কাস্টমার , আমাকে কোনো প্রোমোকোড দেওয়া যাবে?
+     - এই মুহুর্তে কোনো প্রোমোকোড অফার আছে?
+     - Have any promo code offer?
+     - Can I get any promo code?
+     - amake kono promo code deya jabe
+     - promo code ase kono?
+     - promo code ase ?
+     - promo code kivabe pabo
+     - promo code er jonno ki korte hobe
+     - বর্তমানে কোনো প্রোমোকোড এর অফার আছে?
+     - প্রোমো কোড এর অফার আছে?
+     - আমি কোনো প্রোমোকোড পেতে পারি?
+
+-  intent: promo_code_related_question_two
+   examples: |
+     - প্রোমোকোড কাজ করছে না
+     - আমার কাছে একটি প্রোমোকোড আছে কাজ করছে না
+     - প্রোমোকোড ব্যবহার করছি কিন্তু কিছু হয় না
+     - প্রোমোকোড টি কাজ করে না
+     - প্রোমোকোড দিলে কাজ হয় কেনো?
+     - প্রোমোকোড কাজ করে না কেনো
+     - আপনাদের প্রোমোকোড কাজ করে না
+     - আপনাদের ওয়েবসাইট এ প্রোমোকোড কাজ করে না
+     - প্রোমোকোড কাজ করছে না কি করতে পারি?
+     - প্রোমোকোড দিলাম কিন্তু ডিস্কাউন্ট হয় কেনো?
+
+-  intent: payment_related_questions
+   examples: |
+     - মূল্য কিভাবে পরিশোধ করবো
+     - টাকা কিভাবে দিবো
+     - taka kivabe dibo
+     - বই পাওয়ার পর টাকা দিতে চাচ্ছি
+     - ক্যাশ অন ডেলিভারি হবে ?
+     - কি কি মাধ্যমে পেমেন্ট করা যাবে?
+     - পেমেন্টের নিয়ম কি?
+     - বই রিসিভ করার সময় বিকাশে পেমেন্ট করা যাবে?
+     - আপনারা ক্যাশ অন ডেলিভারি করেন?
+     - কিভাবে পেমেন্ট নেন আপনারা?
+     - বইয়ের মূল্য কিভাবে পরিশোধ করবো?
+     - কার কাছে পেমেন্ট করবো?
+     - কোথায় পেমেন্ট করবো?
+     - অগ্রিম পেমেন্ট করা যাবে?
+     - বিকাশ বা নগদে পেমেন্ট নেন?
+     - রকেটে পেমেন্ট করা যাবে?
+     - পেমেন্টের ব্যাপারটি বুঝিয়ে বলুন।
+     - আপনারা কি সব জায়গাতেই ক্যাশ অন ডেলিভারি করেন?
+     - অগ্রিম পেমেন্ট করতে হবে নাকি ক্যাশ অন ডেলিভারি?
+     - টাকা কিভাবে নিবেন?
+     - টাকাটা কার কাছে দিবো?
+     - বইয়ের টাকাটা কিভাবে পরিশোধ করবো?
+     - বই হাতে পাওয়া পর টাকা দিতে চাচ্ছি
+     - বই হাতে পাওয়ার পর টাকা দিলে হবে?
+     - cash on delivery
+     - cashon delivery?
+     - ক্যাশ অন ডেলিভারি হলে বই নিবো
+     - ক্যাশঅন ডেলিভারি দেন আপনারা?
+     - পেমেন্ট ক্যাশ অন ডেলিভারি হবে
+     - পেমেন্ট কিভাবে নেন
+     - পেমেন্ট কিভাবে দিবো
+     - কার্ড পেমেন্ট করা যায়
+     - aponara cash on delivery koren
+     - aponara cash on delivery den
+     - kothay payment korbo
+     - advance payment korte hobe
+     - বই হাতে পাওয়ার পর পেমেন্ট করলে হবে?
+     - পেমেন্ট?
+     - ঢাকার বাহিরে ক্যাশঅন ডেলিভারি দেন?
+     - ঢাকার বাহিরে ক্যাশঅন ডেলিভারি আছে আপনাদের ?
+     - ক্যাশঅন ডেলিভারি হবে
+     - cash on delivery hobe?
+     - কুরিয়ারে টাকা দিলে হবে
+     - ডেলিভারি দেওয়ার পর টাকা দিব
+     - পার্সেল পাওয়া পর মূল্য পরিশোধ করা যাবে
+     - parcel paoar  por taka deoa jabe
+     - card payment system?
+     - payment system?
+     - bkash payment?
+     - taka kar kase dibo?
+

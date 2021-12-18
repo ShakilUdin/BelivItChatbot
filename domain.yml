@@ -1,0 +1,119 @@
+version: "3.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+  - greet
+  - book_stock_query
+  - want_to_buy_book
+  - want_pdf_book
+  - website_book_set_not_show
+  - what_type_of_book
+  - do_you_have_tranlate_book
+  - dhaka_university_addmission_book
+  - west_india_book
+  - want_order_several_book
+  - out_of_stock_get_when
+  - একটি বই প্রি-অর্ডার করেছি কবে পাবো?
+  - change_address_in_order
+  - add_new_book_on_existing_order
+  - pre_order_a_book
+  - book_delivery_question
+  - general_question_one
+  - general_question_two
+  - general_question_three
+  - general_question_four
+  - general_question_five
+  - general_question_six
+  - promo_code_related_question_one
+  - promo_code_related_question_two
+  - payment_related_questions
+
+
+responses:
+  utter_greet:
+  - text: "বলুন কিভাবে সহায়তা করতে পারি?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Shakil Uddin."
+
+  utter_book_stock_query:
+    - text: "আপনি ক্যাশঅন ডেলিভারিতে বইটি/বইগুলো অর্ডার করুন। যদি কোনো বই স্টকে শেষ হয়ে যায় আমাদের প্রতিনিধি আপনাকে কল করে বিস্তারিত জানিয়ে দিবে।"
+
+  utter_want_to_buy_book:
+    - text: "ওয়েবসাইট থেকে যেকোণো পছন্দের বই 'Add to Cart' করুন। এরপর ডান দিকে 'Cart' অপশনে কিল্ক করে বিস্তারিত দেখুন , সবকিছু দেখার পর
+    'Next' অপশনে ক্লিক করুন। যদি অ্যাকাউন্ট সাইন ইন করা থাকে তাহলে 'Use this Address' অপশনে ক্লিক করুন (যদি সাইন ইন করা না থাকে সেক্ষেত্রে
+    'সাইন ইন করার জন্য যে নাম্বার দিয়ে অ্যাকাউন্ট খুলেছিলেন সেই নাম্বার ও পাসওয়ার্ড টি দিন) যদি আপনি আপনার ঠিকানা পরিবর্তন করতে চান তাহলে
+    'Use new Address' এ ক্লিক করে ঠিকানা পরিবর্তন করতে পারবেন।। এরপর পেমেন্ট অপশন এ আপনি আপনার সুবিধা অনুযায়ী যেকোনো একটি সিল্কেট করুন।
+    'Trems & Privacy Policies' গুলো ভালো করে পড়ে নিয়ে 'Place Order' এ ক্লিক করার পর 'Confirm' এ ক্লিক করে অর্ডারটি place করুন।"
+
+  utter_want_pdf_book:
+    - text: "দুঃখিত, আমাদের পিডিএফ সার্ভিস টি দেওয়া হয় না।"
+
+  utter_website_book_set_not_show:
+    - text: "আপনি ক্যাশঅন ডেলিভারিতে বইটি/বইগুলো অর্ডার করুন। যদি কোনো বই স্টকে শেষ হয়ে যায় আমাদের প্রতিনিধি আপনাকে কল করে বিস্তারিত জানিয়ে দিবে।"
+
+  utter_what_type_of_book:
+    - text: "গল্প, উপন্যাস, কথা-সাহিত্য, একাডেমিক সহ যেকোনো বই পাবেন বইবাজার.কম এ"
+
+  utter_do_you_have_tranlate_book:
+    - text: "https://www.boibazar.com/category-books/translated-books-0024"
+
+  utter_dhaka_university_addmission_book:
+    - text: "https://www.boibazar.com/category-books/university-admission-guide"
+
+  utter_west_india_book:
+    - text: "https://www.boibazar.com/category-books/west-bangal-book"
+
+  utter_want_order_several_book:
+    - text: "যদি কোনো কারনে আপনার অর্ডার করা বই/বইগুলো শেষ হয়ে যায় বা না থাকে , আমাদের প্রতিনিধি আপনাকে কল করে জানিয়ে দিবে।"
+
+  utter_out_of_stock_get_when:
+    - text: "স্যার এটি নির্ভর করছে প্রকাশনী প্রতিষ্ঠানের উপর। তারা পুনঃ মুদ্রণ করলেই আমরা আবার পাঠকদের নিকট পৌছে দিতে পারবো। ধন্যবাদ।"
+
+  utter_pre_order_a_book:
+    - text: "অর্ডার সংক্রান্ত যেকোনো তথ্য জনতে অনুগ্রহ করে কল করুন ১৬৭০৫ নাম্বারে অথবা ইনবক্স করুন আমাদের ফেসবুক পেজ এ।"
+
+  utter_change_address_in_order:
+    - text: "'অর্ডারের যেকোনো আপডেট বা পরিবর্তনের জন্য অনুগ্রহ করে আপনার অর্ডার আইডি অথবা  ফোন নাম্বারটি বলুন. (যদি আপনার অর্ডারটি ডিসপেচ অথবা শিপমেন্ট
+     না হয়ে থাকে সেক্ষেত্রে অর্ডারের পরিবর্তন গ্রহন যোগ্য হবে)। অথবা জরুরি প্রয়োজনে কল করুন হটলাইন নাম্বারে 16705"
+
+  utter_add_new_book_on_existing_order:
+    - text: "অর্ডারের যেকোনো আপডেট বা পরিবর্তনের জন্য অনুগ্রহ করে আপনার অর্ডার আইডি অথবা  ফোন নাম্বারটি বলুন. (যদি আপনার অর্ডারটি ডিসপেচ অথবা শিপমেন্ট
+    না হয়ে থাকে সেক্ষেত্রে অর্ডারের পরিবর্তন গ্রহন যোগ্য হবে)। অথবা জরুরি প্রয়োজনে কল করুন হটলাইন নাম্বারে 16705"
+
+  utter_book_delivery_question:
+    - text: "ধন্যবাদ আপনার প্রশ্নের জন্য। বাংলাদেশের যেকোন স্থানে ডেলিভারির জন্য ৫০ টাকা চার্জ প্রযোজ্য। ৯৯৯+ টাকার অর্ডারে ডেলিভারি চার্জ ফ্রী।"
+
+  utter_general_question_one:
+    - text: "'আমরা শুধু মাত্র অনলাইনে বই ডেলিভারি করে থাকি। আপনার যেকোনো পছন্দের বই/বইগুলো আমাদের ওয়েবসাইট , ফেসবুক পেজ অথবা কল করে অর্ডার করতে পারবেন।"
+
+  utter_general_question_two:
+    - text: "দুঃখিত, দেশের বাহিরে আমরা ডেলিভারি করে থাকি না।"
+
+  utter_general_question_three:
+    - text: "দীর্ঘ সময় ধরে লাইন এ না থেকে অনুগ্রহ করে কিছুক্ষন পর পর চেষ্টা করুন।"
+
+  utter_general_question_four:
+    - text: "বিষয়টির জন্য আমরা আন্তরিকভাবে দুঃখিত। অনুগ্রহ করে বিস্তারিত জানিয়ে আমাদের 16705 হটলাইন নাম্বারে কল করুন . খুব শীঘ্রই একজন প্রতিনিধি আপনাকে বিষয়টির জন্য সমাধান প্রদান করবেন।"
+
+  utter_general_question_five:
+    - text: "আমরা কপি,পুরাতন, মানহীন  বই বিক্রি করি না। আমরা কপি,পুরাতন, মানহীন  বই বিক্রি করি না। "
+
+  utter_general_question_six:
+    - text: "আমরা খুব যত্ন সহকারে বইগুলো প্যাকেজ করে আপনাদের উদ্দেশ্যে কুরিয়ারের কাছে হস্তান্তর করে থাকি। তারপরও যদি আপনি ছেড়া, ফাটা বা ড্যামেজ বই পেয়ে থাকেন আমাদের 16705 হটলাইন নাম্বার কল করে জানাবেন "
+
+  utter_promo_code_related_question_one:
+    - text: "এই মুহুর্তে প্রোমোকোড এর কোনো অফার নেই।"
+
+  utter_promo_code_related_question_two:
+    - text: "দুঃখিত ,বিষয়টির জন্য। অনুগ্রহ করে 16705  নাম্বারে কল করে বিস্তারিত বলুন। আমাদের বইবাজার.কম প্রতিনিধি  আপনাকে সহযোগিতা করবেন"
+
+  utter_payment_related_questions:
+    - text: "স্যার, আমরা সারা দেশে স্থান ভেদে ক্যাশ অন ডেলিভারি (পার্সেল হাতে পেয়ে টাকা পরিশোধ) সুবিধায় ডেলিভারি করে থাকি। এছাড়াও আপনি চাইলে আমাদের ওয়েবসাইট থেকে সরাসরি অর্ডার করে ডেবিট কার্ড, ক্রেডিট কার্ড, বিকাশ, ইত্যাদি যে কোন পেমেন্ট করতে"
+
